@@ -9,13 +9,22 @@ body {
   height: auto;
   padding: 100px 150px 100px 150px;
   align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+.container-categorie {
+  display: flex;
+  align-items: center;
   gap: 40px;
   flex-direction: column;
-  min-height: 80vh;
+  width: 100%;
 }
+
 .container-front,
 .container-back,
-.container-Design {
+.container-Design,
+.container-systemes-embarques,
+.container-Gestion-de-Projets {
   display: flex;
   flex-direction: column;
   height: auto;
@@ -55,4 +64,25 @@ body {
 }
 .img-arround {
   border-radius: 8px;
+}
+.navbar {
+  display: flex;
+  justify-content: left;
+  width: auto;
+  align-items: center;
+  gap: 10px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  background: none;
+  border: none;
+  font: inherit;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.centre {
+  display: flex;
+  width: 100%;
 }
