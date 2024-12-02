@@ -14,7 +14,8 @@ body {
   min-height: 80vh;
 }
 .container-front,
-.container-back {
+.container-back,
+.container-Design {
   display: flex;
   flex-direction: column;
   height: auto;
@@ -51,4 +52,7 @@ body {
   gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
+}
+.img-arround {
+  border-radius: 8px;
 }
