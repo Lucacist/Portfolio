@@ -86,3 +86,13 @@ a {
   display: flex;
   width: 100%;
 }
+@media (max-width: 1150px) {
+  .container-parent {
+    padding: 100px 100px 100px 100px;
+  }
+}
+@media (max-width: 600px) {
+  .container-parent {
+    padding: 100px 50px 100px 50px;
+  }
+}
