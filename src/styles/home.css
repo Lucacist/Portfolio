@@ -241,7 +241,7 @@ a {
 
 @media (max-width: 1250px) {
   .container-pre {
-    grid-template-columns: 1fr; /* Une seule colonne */
+    grid-template-columns: 1fr;
   }
   .container-2 {
     grid-template-columns: 1fr;
