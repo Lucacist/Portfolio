@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="src/styles/home.css" />
+  </head>
+  <body>
+    <div class="point"></div>
+    <div class="point2"></div>
+    <div class="point3"></div>
+    <div class="fond" id="fond">
+      <div class="text-fond">
+        <div class="fond2">#Menu</div>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="nomnav">Luca.F</div>
+      <button
+        class="hamburger"
+        aria-label="Toggle navigation"
+        onclick="toggleMenu()"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Menu déroulant -->
+      <ul class="menu" id="menu">
+        <li>
+          <a href="/Home.html" onclick="closeMenu()">Home</a>
+        </li>
+        <li>
+          <a href="/HomeV2.html" onclick="closeMenu()">Projets</a>
+        </li>
+        <li>
+          <a href="/settings" onclick="closeMenu()">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container-body">
+      <div class="container">
+        <div class="intro">
+          <div class="titre">Bienvenue sur mon portfolio !</div>
+          <div class="paragraphe">
+            Je m'appelle Luca Fourfooz, étudiant en classe préparatoire
+            d'ingénieur avec une spécialisation en informatique. Découvrez mes
+            projets, mes compétences et mon parcours.
+          </div>
+        </div>
+      </div>
+      <div class="bouton">
+        <button class="scroll-button" onclick="scrollDown()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="cadrage">
+        <img src="./src/img/pc2.png" alt="" class="pp" />
+      </div>
+
+      <div class="div-comp">
+        <div class="competences">
+          <div class="text-comp">Compétences</div>
+          <div class="types-comp1">
+            <div class="bloc">
+              <div class="titre-comp">Design:</div>
+              <li>UX/UI Design</li>
+              <li>Création graphique (logos, bannières)</li>
+              <li>Prototypes et maquettes (Figma, Adobe XD)</li>
+              <li>Animation graphique (animations SVG ou CSS)</li>
+              <li>Modélisation 3D</li>
+            </div>
+            <div class="img-bloc-container titre-comp">
+              Outils
+              <div class="outils">
+                <img
+                  src="./src/img/competences/Figma.svg"
+                  alt=""
+                  class="img-bloc arround"
+                />
+                <img
+                  src="./src/img/competences/Adobe_XD.svg"
+                  alt=""
+                  class="img-bloc"
+                />
+                <img
+                  src="./src/img/competences/blender.svg"
+                  alt=""
+                  class="img-bloc"
+                />
+                <img
+                  src="./src/img/competences/css.svg"
+                  alt=""
+                  class="img-bloc"
+                />
+                <img
+                  src="./src/img/competences/Inkscape.svg"
+                  alt=""
+                  class="img-bloc"
+                />
+              </div>
+            </div>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="285"
+            height="121"
+            fill="none"
+            viewBox="0 0 285 121"
+            class="svg-comp1"
+          >
+            <path
+              fill="#fff"
+              d="M276.421 120.914a1.999 1.999 0 0 0 2.493-1.335l5.214-17.228a2 2 0 0 0-3.828-1.159l-4.635 15.314-15.314-4.634a2 2 0 0 0-1.159 3.828l17.229 5.214ZM2 1.5c-1.835.796-1.834.797-1.833.8l.002.004a4.367 4.367 0 0 0 .027.06 30.04 30.04 0 0 0 .365.775c.256.527.64 1.286 1.167 2.245 1.053 1.918 2.671 4.638 4.956 7.89 4.567 6.505 11.8 15.149 22.497 23.782C50.604 54.347 85.8 71.5 141 71.5v-4c-54.299 0-88.604-16.847-109.306-33.556C21.328 25.577 14.342 17.22 9.957 10.976 7.765 7.853 6.223 5.26 5.235 3.46a48.75 48.75 0 0 1-1.08-2.073 26.03 26.03 0 0 1-.321-.685c0 .001 0 .002-1.834.798Zm139 70c54.439 0 88.068 12.301 108.022 24.458 9.983 6.082 16.57 12.144 20.643 16.649 2.037 2.253 3.447 4.119 4.339 5.406.446.643.763 1.142.964 1.471.1.165.172.288.216.366l.046.082.008.015.001.001-.001-.002c-.001-.001-.001-.002 1.762-.946s1.762-.946 1.761-.947l-.002-.005a.178.178 0 0 0-.007-.013l-.021-.039-.074-.13a18.182 18.182 0 0 0-.273-.462c-.241-.396-.601-.96-1.093-1.671-.985-1.42-2.501-3.421-4.659-5.809-4.318-4.776-11.2-11.09-21.529-17.382C230.432 79.949 196.061 67.5 141 67.5v4Z"
+            />
+          </svg>
+          <div class="types-comp2">
+            <div class="bloc">
+              <div class="titre-comp">Front-End Development:</div>
+              <li>Sites web statiques et dynamiques</li>
+              <li>Frameworks utilisés (React, Vue.js, etc.)</li>
+              <li>Responsive Design et compatibilité mobile</li>
+              <li>Animation et interactivité (JavaScript, CSS)</li>
+            </div>
+            <div class="img-bloc-container titre-comp">
+              Outils
+              <div class="outils">
+                <img
+                  src="./src/img/competences/HTML.svg"
+                  alt=""
+                  class="img-bloc"
+                />
+                <img
+                  src="./src/img/competences/React.svg"
+                  alt=""
+                  class="img-bloc"
+                />
+                <img
+                  src="./src/img/competences/Vue.js.svg"
+                  alt=""
+                  class="img-bloc"
+                />
+                <img
+                  src="./src/img/competences/css.svg"
+                  alt=""
+                  class="img-bloc"
+                />
+                <img
+                  src="./src/img/competences/javascript.svg"
+                  alt=""
+                  class="img-bloc arround"
+                />
+              </div>
+            </div>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="285"
+            height="121"
+            fill="none"
+            viewBox="0 0 285 121"
+            class="svg-comp2"
+          >
+            <path
+              fill="#fff"
+              d="M8.58 120.914a2 2 0 0 1-2.494-1.335L.872 102.351a2 2 0 0 1 3.828-1.159l4.635 15.314 15.314-4.634a2 2 0 0 1 1.159 3.828l-17.229 5.214ZM283 1.5c1.835.796 1.834.797 1.833.8l-.002.004a54.16 54.16 0 0 1-1.559 3.08c-1.053 1.918-2.671 4.638-4.956 7.89-4.568 6.505-11.801 15.149-22.497 23.782C234.396 54.347 199.201 71.5 144 71.5v-4c54.299 0 88.604-16.847 109.306-33.556 10.366-8.367 17.352-16.724 21.737-22.968 2.192-3.123 3.734-5.716 4.722-7.516.494-.9.85-1.602 1.079-2.073.115-.235.198-.412.251-.527l.057-.126a.725.725 0 0 0 .012-.027l.002-.005c0 .001-.001.002 1.834.798Zm-139 70c-54.44 0-88.068 12.301-108.022 24.458-9.983 6.082-16.57 12.144-20.643 16.649-2.037 2.253-3.447 4.119-4.339 5.406a30.398 30.398 0 0 0-.964 1.471c-.1.165-.172.288-.216.366l-.046.082-.008.015v.001-.002c0-.001.001-.002-1.762-.946a119.128 119.128 0 0 1-1.761-.947l.002-.005.007-.013.021-.039.074-.13c.062-.109.153-.265.273-.462.241-.396.6-.96 1.093-1.671.985-1.42 2.5-3.421 4.659-5.809 4.318-4.776 11.2-11.09 21.529-17.382C54.567 79.949 88.939 67.5 144 67.5v4Z"
+            />
+          </svg>
+          <div class="types-comp1">
+            <div class="bloc">
+              <div class="titre-comp">Back-End Development:</div>
+              <li>Gestion des bases de données (SQL, NoSQL)</li>
+              <li>Frameworks côté serveur (Node.js)</li>
+              <li>Sécurité et authentification</li>
+            </div>
+            <div class="img-bloc-container titre-comp">
+              Outils
+              <div class="outils">
+                <img
+                  src="./src/img/competences/MySQL.svg"
+                  alt=""
+                  class="img-bloc arround"
+                />
+                <img
+                  src="./src/img/competences/nodejs.svg"
+                  alt=""
+                  class="img-bloc"
+                />
+                <img
+                  src="./src/img/competences/php.svg"
+                  alt=""
+                  class="img-bloc"
+                />
+                <img
+                  src="./src/img/competences/C++.svg"
+                  alt=""
+                  class="img-bloc"
+                />
+                <img
+                  src="./src/img/competences/C.svg"
+                  alt=""
+                  class="img-bloc"
+                />
+              </div>
+            </div>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="285"
+            height="121"
+            fill="none"
+            viewBox="0 0 285 121"
+            class="svg-comp1"
+          >
+            <path
+              fill="#fff"
+              d="M276.421 120.914a1.999 1.999 0 0 0 2.493-1.335l5.214-17.228a2 2 0 0 0-3.828-1.159l-4.635 15.314-15.314-4.634a2 2 0 0 0-1.159 3.828l17.229 5.214ZM2 1.5c-1.835.796-1.834.797-1.833.8l.002.004a4.367 4.367 0 0 0 .027.06 30.04 30.04 0 0 0 .365.775c.256.527.64 1.286 1.167 2.245 1.053 1.918 2.671 4.638 4.956 7.89 4.567 6.505 11.8 15.149 22.497 23.782C50.604 54.347 85.8 71.5 141 71.5v-4c-54.299 0-88.604-16.847-109.306-33.556C21.328 25.577 14.342 17.22 9.957 10.976 7.765 7.853 6.223 5.26 5.235 3.46a48.75 48.75 0 0 1-1.08-2.073 26.03 26.03 0 0 1-.321-.685c0 .001 0 .002-1.834.798Zm139 70c54.439 0 88.068 12.301 108.022 24.458 9.983 6.082 16.57 12.144 20.643 16.649 2.037 2.253 3.447 4.119 4.339 5.406.446.643.763 1.142.964 1.471.1.165.172.288.216.366l.046.082.008.015.001.001-.001-.002c-.001-.001-.001-.002 1.762-.946s1.762-.946 1.761-.947l-.002-.005a.178.178 0 0 0-.007-.013l-.021-.039-.074-.13a18.182 18.182 0 0 0-.273-.462c-.241-.396-.601-.96-1.093-1.671-.985-1.42-2.501-3.421-4.659-5.809-4.318-4.776-11.2-11.09-21.529-17.382C230.432 79.949 196.061 67.5 141 67.5v4Z"
+            />
+          </svg>
+          <div class="types-comp2">
+            <div class="bloc">
+              <div class="titre-comp">Systèmes embarqués:</div>
+              <li>Projets sur microcontrôleurs (Arduino, Raspberry Pi)</li>
+              <li>Optimisation des performances et gestion de la mémoire.</li>
+            </div>
+            <div class="img-bloc-container titre-comp">
+              Outils
+              <div class="outils">
+                <img
+                  src="./src/img/competences/arduino.svg"
+                  alt=""
+                  style="height: 70px; width: 90px"
+                />
+
+                <img
+                  src="./src/img/competences/bash.svg"
+                  alt=""
+                  class="img-bloc"
+                />
+              </div>
+            </div>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="285"
+            height="121"
+            fill="none"
+            viewBox="0 0 285 121"
+            class="svg-comp2"
+          >
+            <path
+              fill="#fff"
+              d="M8.58 120.914a2 2 0 0 1-2.494-1.335L.872 102.351a2 2 0 0 1 3.828-1.159l4.635 15.314 15.314-4.634a2 2 0 0 1 1.159 3.828l-17.229 5.214ZM283 1.5c1.835.796 1.834.797 1.833.8l-.002.004a54.16 54.16 0 0 1-1.559 3.08c-1.053 1.918-2.671 4.638-4.956 7.89-4.568 6.505-11.801 15.149-22.497 23.782C234.396 54.347 199.201 71.5 144 71.5v-4c54.299 0 88.604-16.847 109.306-33.556 10.366-8.367 17.352-16.724 21.737-22.968 2.192-3.123 3.734-5.716 4.722-7.516.494-.9.85-1.602 1.079-2.073.115-.235.198-.412.251-.527l.057-.126a.725.725 0 0 0 .012-.027l.002-.005c0 .001-.001.002 1.834.798Zm-139 70c-54.44 0-88.068 12.301-108.022 24.458-9.983 6.082-16.57 12.144-20.643 16.649-2.037 2.253-3.447 4.119-4.339 5.406a30.398 30.398 0 0 0-.964 1.471c-.1.165-.172.288-.216.366l-.046.082-.008.015v.001-.002c0-.001.001-.002-1.762-.946a119.128 119.128 0 0 1-1.761-.947l.002-.005.007-.013.021-.039.074-.13c.062-.109.153-.265.273-.462.241-.396.6-.96 1.093-1.671.985-1.42 2.5-3.421 4.659-5.809 4.318-4.776 11.2-11.09 21.529-17.382C54.567 79.949 88.939 67.5 144 67.5v4Z"
+            />
+          </svg>
+          <div class="types-comp1">
+            <div class="bloc">
+              <div class="titre-comp">Gestion de Projets et Méthodes:</div>
+              <li>Gestion de versions (Git/GitHub)</li>
+              <li>Travail en Équipe</li>
+              <li>Planification et Suivi</li>
+            </div>
+            <div class="img-bloc-container titre-comp">
+              Outils
+              <div class="outils">
+                <img
+                  src="./src/img/competences/notion.svg"
+                  alt=""
+                  class="img-bloc arround"
+                />
+                <img
+                  src="./src/img/competences/github.svg"
+                  alt=""
+                  class="img-bloc"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-contact">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="73"
+          height="31"
+          fill="none"
+          viewBox="0 0 73 31"
+          class="svg-contact"
+        >
+          <path
+            fill="#fff"
+            d="M72.414 16.914a2 2 0 0 0 0-2.828L59.686 1.358a2 2 0 1 0-2.828 2.828L68.172 15.5 56.858 26.814a2 2 0 1 0 2.828 2.828l12.728-12.728ZM0 17.5h71v-4H0v4Z"
+          />
+        </svg>
+
+        <div class="contact">Contactez moi</div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="73"
+          height="31"
+          fill="none"
+          viewBox="0 0 73 31"
+          class="svg-contact2"
+        >
+          <path
+            fill="#fff"
+            d="M.586 16.914a2 2 0 0 1 0-2.828L13.314 1.358a2 2 0 1 1 2.828 2.828L4.828 15.5l11.314 11.314a2 2 0 1 1-2.828 2.828L.586 16.914ZM73 17.5H2v-4h71v4Z"
+          />
+        </svg>
+      </div>
+      <footer class="footer">
+        <div>&copy; 2024 Luca.ffz. Tous droits réservés.</div>
+      </footer>
+    </div>
+  </body>
+  <script>
+    function scrollDown() {
+      window.scrollBy({
+        top: window.innerHeight / 1.5, // Descend de la moitié de la hauteur de la fenêtre
+        behavior: "smooth", // Défilement fluide
+      });
+    }
+  </script>
+  <script>
+    // Gestion de l'état du menu
+    let isOpen = false;
+
+    function toggleMenu() {
+      isOpen = !isOpen;
+
+      const menu = document.getElementById("menu");
+      const fond = document.getElementById("fond");
+      const hamburger = document.querySelector(".hamburger");
+
+      if (isOpen) {
+        menu.classList.add("menu-open");
+        fond.classList.add("fond-active");
+        hamburger.classList.add("open");
+      } else {
+        menu.classList.remove("menu-open");
+        fond.classList.remove("fond-active");
+        hamburger.classList.remove("open");
+      }
+    }
+
+    function closeMenu() {
+      isOpen = false;
+
+      const menu = document.getElementById("menu");
+      const fond = document.getElementById("fond");
+      const hamburger = document.querySelector(".hamburger");
+
+      menu.classList.remove("menu-open");
+      fond.classList.remove("fond-active");
+      hamburger.classList.remove("open");
+    }
+  </script>
+</html>

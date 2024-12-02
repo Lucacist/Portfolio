@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  font-family: Arial, sans-serif;
+}
+
+.gradient-border {
+  position: relative;
+  display: inline-block;
+  padding: 2px; /* Espace pour les bordures */
+  border-radius: 20px; /* Arrondi des bordures */
+  background: linear-gradient(45deg, #ff6ec4, #7873f5, #4facfe);
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  border-radius: 18px; /* Ajusté pour s'aligner */
+  background: #1a1a1a; /* Couleur du fond du conteneur */
+}
+
+.content {
+  position: relative;
+  z-index: 2; /* Place le contenu au-dessus */
+  background: #1a1a1a; /* Couleur de fond du conteneur */
+  padding: 20px 30px;
+  border-radius: 18px;
+  color: #fff;
+  text-align: center;
+}
