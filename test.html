@@ -3,14 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ciel Étoilé avec Étoiles Filantes</title>
-    <link rel="stylesheet" href="/src/styles/test.css" />
+    <link rel="stylesheet" href="src/styles/test.css" />
+    <link rel="stylesheet" href="src/styles/Variable.css" />
+    <title>Compétences</title>
   </head>
   <body>
-    <div class="gradient-border">
-      <div class="content">
-        <h1>Dégradé sur les bordures</h1>
-        <p>Voici un conteneur avec un effet de dégradé sur ses bordures.</p>
+    <div class="container-parent">
+      <div class="centre2">
+        <a href="./Home.html" class="navbar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="16"
+            fill="none"
+            viewBox="0 0 22 16"
+          >
+            <path
+              fill="#fff"
+              d="M21 7a1 1 0 1 1 0 2V7ZM.293 8.707a1 1 0 0 1 0-1.414L6.657.929A1 1 0 0 1 8.07 2.343L2.414 8l5.657 5.657a1 1 0 1 1-1.414 1.414L.293 8.707ZM21 9H1V7h20v2Z"
+            />
+          </svg>
+          <div class="texte">Retour</div>
+        </a>
+      </div>
+      <div class="container2">
+        <div class="container1">
+          <img class="img-lien" src="./src/img/competences/github.svg" alt="" />
+          <img class="img-lien" src="./src/img/contact/linkedin.svg" alt="" />
+          <img class="img-lien" src="./src/img/contact/Insta.svg" alt="" />
+          <img class="img-lien" src="./src/img/contact/mail-cesi.svg" alt="" />
+        </div>
+        <form id="contact-form">
+          <input type="hidden" name="contact_number" value="697483" />
+          <label>Name</label>
+          <input type="text" name="user_name" placeholder="Entrez votre nom" />
+          <label>Email</label>
+          <input
+            type="email"
+            name="user_email"
+            placeholder="Entrez votre email"
+          />
+          <label>Message</label>
+          <textarea
+            name="message"
+            placeholder="Écrivez votre message"
+          ></textarea>
+          <div class="centre">
+            <input type="submit" value="Send" class="send-button" />
+          </div>
+        </form>
       </div>
     </div>
   </body>

@@ -6,7 +6,7 @@ body {
 }
 .container-parent {
   display: flex;
-  height: auto;
+  height: 100%;
   padding: 100px 150px 100px 150px;
   align-items: center;
   gap: 20px;
