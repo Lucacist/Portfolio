@@ -160,6 +160,13 @@ a {
 .svg-contain:hover .mail-texte {
   display: block;
 }
+.grow {
+  display: flex;
+  transition: transform 0.1s;
+}
+.grow:hover {
+  transform: scale(1.1);
+}
 @media (min-width: 1250px) {
   form {
     margin: 0 30%;
