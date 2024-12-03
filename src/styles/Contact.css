@@ -1,0 +1,136 @@
+body {
+  background-color: var(--couleur-body);
+  color: var(--couleur-texte);
+  margin: 0;
+  font-family: "Inter-SemiBold", sans-serif;
+}
+.container-parent {
+  display: flex;
+  height: auto;
+  padding: 100px 150px 100px 150px;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+form {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  display: flex;
+  height: auto;
+  width: 100%;
+  background-color: var(--couleur-container);
+  padding: 30px;
+  border-radius: 50px;
+  border: solid 1px var(--couleur-border);
+  margin: auto;
+}
+
+label {
+  font-weight: normal;
+}
+
+input,
+textarea {
+  width: auto;
+  padding: 10px;
+  border: none;
+  background-color: var(--couleur-input);
+  border-radius: 5px;
+  font-size: 1rem;
+  color: var(--couleur-texte);
+  box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px #0f0f0f;
+}
+.send-button {
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  width: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 10px #000, -5px -5px 10px #0f0f0f;
+}
+
+.send-button:active {
+  color: red;
+  transform: translateY(0px);
+  box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px #0f0f0f;
+}
+.centre {
+  display: flex;
+  justify-content: center;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #888;
+  font-size: 16px;
+  font-family: "Inter-SemiBold", sans-serif;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: #555;
+}
+.centre2 {
+  display: flex;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: left;
+  width: auto;
+  align-items: center;
+  gap: 10px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  background: none;
+  border: none;
+  font: inherit;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.container1 {
+  display: flex;
+  width: auto;
+  background-color: var(--couleur-container);
+  padding: 30px;
+  border-radius: 50px;
+  border: solid 1px var(--couleur-border);
+  justify-content: space-evenly;
+}
+.img-lien {
+  height: 95px;
+  width: 95px;
+}
+.container2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 40px;
+}
+@media (max-width: 1150px) {
+  .container-parent {
+    padding: 100px 100px 100px 100px;
+  }
+}
+@media (max-width: 600px) {
+  .container-parent {
+    padding: 100px 50px 100px 50px;
+  }
+}

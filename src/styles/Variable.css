@@ -1,6 +1,8 @@
 :root {
   --couleur-body: #0a0a0a;
   --couleur-container: #0d0d0d;
+  --couleur-input: #0a0a0a;
+
   --couleur-border: #212121;
   --couleur-texte: #fff;
   --couleur-sous-texte: #ffffff95;

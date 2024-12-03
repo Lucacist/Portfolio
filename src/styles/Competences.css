@@ -28,7 +28,7 @@ body {
   display: flex;
   flex-direction: column;
   height: auto;
-  width: 100%;
+  width: calc(100% - 60px);
   background-color: var(--couleur-container);
   padding: 30px;
   border-radius: 50px;
