@@ -213,17 +213,20 @@ a {
   font-size: 24px;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 .stage2 {
   font-size: 18px;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 .stage3 {
   font-size: 15px;
   display: flex;
   justify-content: center;
   color: var(--couleur-sous-texte);
+  text-align: center;
 }
 .container-stage {
   display: flex;

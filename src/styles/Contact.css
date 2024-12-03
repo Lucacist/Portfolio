@@ -7,7 +7,7 @@ body {
 .container-parent {
   display: flex;
   height: 100%;
-  padding: 100px 150px 100px 150px;
+  padding: 10vh 150px;
   align-items: center;
   gap: 20px;
   flex-direction: column;
@@ -133,6 +133,7 @@ a {
   flex-wrap: wrap;
   column-gap: 20px;
   row-gap: 20px;
+  align-items: center;
 }
 .img-lien {
   height: 95px;
@@ -144,6 +145,21 @@ a {
   width: 100%;
   gap: 40px;
 }
+.svg-contain {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 110px;
+  width: 95px;
+  margin-top: 15px;
+}
+.mail-texte {
+  display: none;
+}
+.svg-contain:hover .mail-texte {
+  display: block;
+}
 @media (min-width: 1250px) {
   form {
     margin: 0 30%;
@@ -151,7 +167,7 @@ a {
 }
 @media (max-width: 1150px) {
   .container-parent {
-    padding: 100px 100px 100px 100px;
+    padding: 10vh 100px;
   }
 }
 @media (max-width: 750px) {
@@ -162,9 +178,21 @@ a {
     width: 60px;
     height: 60px;
   }
+  .svg-contain {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70px;
+    width: 60px;
+    margin-top: 15px;
+  }
+  .mail-texte {
+    font-size: 10px;
+  }
 }
 @media (max-width: 600px) {
   .container-parent {
-    padding: 100px 50px 100px 50px;
+    padding: 5vh 50px;
   }
 }

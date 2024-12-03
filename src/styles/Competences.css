@@ -39,11 +39,13 @@ body {
   display: flex;
   justify-content: center;
   font-size: 28px;
+  text-align: center;
 }
 .expli {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  gap: 5px;
 }
 .texte {
   font-size: 20px;
@@ -88,11 +90,15 @@ a {
 }
 @media (max-width: 1150px) {
   .container-parent {
-    padding: 100px 100px 100px 100px;
+    padding: 10vh 100px;
   }
 }
 @media (max-width: 600px) {
   .container-parent {
-    padding: 100px 50px 100px 50px;
+    padding: 5vh 50px;
+  }
+  .expli {
+    flex-direction: column;
+    gap: 20px;
   }
 }
