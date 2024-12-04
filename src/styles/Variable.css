@@ -7,3 +7,6 @@
   --couleur-texte: #fff;
   --couleur-sous-texte: #ffffff95;
 }
+body {
+  user-select: none;
+}

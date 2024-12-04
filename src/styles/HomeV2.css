@@ -103,6 +103,18 @@ body {
   gap: 10px;
   transition: transform 0.3s ease;
 }
+.cv-contain {
+  background-color: var(--couleur-container);
+  display: flex;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 50px;
+  border: solid 1px var(--couleur-border);
+  font-size: 20px;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
 .titre {
   display: flex;
   align-items: center;
@@ -241,6 +253,11 @@ a {
   width: 60px;
   height: 200px;
 }
+.cv {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
 
 @media (max-width: 1250px) {
   .container-pre {
@@ -281,6 +298,9 @@ a {
 @media (max-width: 600px) {
   .hscroll-wrapper {
     width: 200px;
+  }
+  .cv {
+    flex-direction: column;
   }
 }
 @media (max-width: 550px) {
