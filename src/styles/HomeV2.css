@@ -104,16 +104,26 @@ body {
   transition: transform 0.3s ease;
 }
 .cv-contain {
-  background-color: var(--couleur-container);
+  background-color: var(--couleur-input);
   display: flex;
   height: fit-content;
   padding: 20px;
   border-radius: 50px;
-  border: solid 1px var(--couleur-border);
   font-size: 20px;
   flex-direction: row;
   gap: 10px;
   align-items: center;
+  box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px #0f0f0f;
+}
+.cv-contain:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 10px #000, -5px -5px 10px #0f0f0f;
+}
+
+.cv-contain:active {
+  color: red;
+  transform: translateY(0px);
+  box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px #0f0f0f;
 }
 .titre {
   display: flex;
