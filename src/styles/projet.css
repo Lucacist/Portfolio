@@ -41,6 +41,13 @@ a {
   width: 100%;
   height: auto;
 }
+.texte {
+  font-size: var(--taille-texte);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
 
 .grid-item {
   display: flex;
