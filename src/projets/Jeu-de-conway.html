@@ -3,65 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montez&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../styles/Variable.css" />
     <link rel="stylesheet" href="../styles/JeuConway.css" />
     <title>Jeu de Conway</title>
   </head>
   <body>
     <div class="container-parent">
-        <div class="centre">
-            <a href="../projet.html" class="navbar">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" fill="none" viewBox="0 0 22 16">
-                    <path fill="#fff" d="M21 7a1 1 0 1 1 0 2V7ZM.293 8.707a1 1 0 0 1 0-1.414L6.657.929A1 1 0 0 1 8.07 2.343L2.414 8l5.657 5.657a1 1 0 1 1-1.414 1.414L.293 8.707ZM21 9H1V7h20v2Z"/>
-                </svg>
-                <div class="texte">Retour</div>
-            </a>
-        </div>
-        
-        <div class="container">
-            <!-- Container Introduction -->
-            <div class="container-intro">
-                <div class="title">Le Jeu de la Vie de Conway</div>
-                <div class="introduction">
-                    Le Jeu de la Vie est un automate cellulaire fascinant créé par le mathématicien John Conway en 1970. 
-                    Ce projet est une implémentation interactive qui permet d'explorer les motifs émergents et les comportements complexes 
-                    qui peuvent naître de règles très simples.
-                </div>
-            </div>
+      <div class="centre">
+        <a href="../projet.html" class="navbar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="16"
+            fill="none"
+            viewBox="0 0 22 16"
+          >
+            <path
+              fill="#fff"
+              d="M21 7a1 1 0 1 1 0 2V7ZM.293 8.707a1 1 0 0 1 0-1.414L6.657.929A1 1 0 0 1 8.07 2.343L2.414 8l5.657 5.657a1 1 0 1 1-1.414 1.414L.293 8.707ZM21 9H1V7h20v2Z"
+            />
+          </svg>
+          <div class="texte">Retour</div>
+        </a>
+      </div>
 
-            <!-- Container Détails -->
-            <div class="container-details">
-                <div class="title">Comment ça fonctionne ?</div>
-                <div class="details-text">
-                    Le jeu se déroule sur une grille bidimensionnelle infinie, où chaque cellule peut être vivante ou morte. 
-                    L'évolution est déterminée par quatre règles simples :<br><br>
-                    1. Une cellule morte avec exactement 3 voisines vivantes devient vivante<br>
-                    2. Une cellule vivante avec 2 ou 3 voisines vivantes reste vivante<br>
-                    3. Une cellule vivante avec moins de 2 voisines vivantes meurt de solitude<br>
-                    4. Une cellule vivante avec plus de 3 voisines vivantes meurt de surpopulation
-                </div>
+      <div class="container">
+        <!-- Container Introduction -->
+        <div class="container-intro">
+          <div class="bloc-titre">
+            <div class="title">Le Jeu de la Vie de Conway</div>
+            <div class="travail">Projet Etudiant</div>
+          </div>
+          <div class="bloc-intro">
+            <div class="introduction">
+              Le Jeu de la Vie est un automate cellulaire fascinant créé par le
+              mathématicien John Conway en 1970. Ce projet est une
+              implémentation interactive qui permet d'explorer les motifs
+              émergents et les comportements complexes qui peuvent naître de
+              règles très simples.
             </div>
-
-            <!-- Container Simulation -->
-            <div class="container-simulation">
-                <div class="title">Simulation & Sources</div>
-                <div class="simulation-container">
-                    <div class="sources">
-                        <div class="details-text">
-                            Ce projet a été développé en utilisant :<br><br>
-                            • HTML5 Canvas pour le rendu<br>
-                            • JavaScript pour la logique du jeu<br>
-                            • CSS pour le style et la mise en page<br><br>
-                            <a href="https://github.com/votre-repo" class="source-link">Voir le code source sur GitHub →</a>
-                        </div>
-                    </div>
-                    <div class="game-container">
-                        <!-- Ici sera inséré le canvas pour la simulation -->
-                        <canvas id="gameCanvas" width="500" height="500"></canvas>
-                    </div>
-                </div>
+            <div class="introduction">
+              Il a été réalisé en moins d'une semaine dans le cadre d'un travail
+              en groupe de deux personnes, en utilisant la programmation
+              orientée objet (POO) avec le langage C++.
             </div>
+          </div>
         </div>
+
+        <!-- Container Détails -->
+        <div class="container-details">
+          <div class="title">Comment ça fonctionne ?</div>
+          <div class="details-text">
+            Le jeu se déroule sur une grille bidimensionnelle infinie, où chaque
+            cellule peut être vivante ou morte. L'évolution est déterminée par
+            quatre règles simples :<br /><br />
+            1. Une cellule morte avec exactement 3 voisines vivantes devient
+            vivante<br />
+            2. Une cellule vivante avec 2 ou 3 voisines vivantes reste
+            vivante<br />
+            3. Une cellule vivante avec moins de 2 voisines vivantes meurt de
+            solitude<br />
+            4. Une cellule vivante avec plus de 3 voisines vivantes meurt de
+            surpopulation
+          </div>
+        </div>
+
+        <!-- Container Simulation -->
+        <div class="container-simulation">
+          <div class="title">Simulation & Sources</div>
+          <div class="simulation-container">
+            <div class="sources">
+              <div class="details-text">
+                Ce projet a été développé en utilisant :<br /><br />
+                • HTML5 Canvas pour le rendu<br />
+                • JavaScript pour la logique du jeu<br />
+                • CSS pour le style et la mise en page<br /><br />
+                <a href="https://github.com/votre-repo" class="source-link"
+                  >Voir le code source sur GitHub →</a
+                >
+              </div>
+            </div>
+            <div class="game-container">
+              <!-- Ici sera inséré le canvas pour la simulation -->
+              <canvas id="gameCanvas" width="500" height="500"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

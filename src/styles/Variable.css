@@ -5,7 +5,7 @@
   --couleur-border: #212121;
   --couleur-texte: #fff;
   --couleur-sous-texte: #ffffff95;
-  --taille-texte: 20px
+  --taille-texte: 20px;
 }
 body {
   user-select: none;

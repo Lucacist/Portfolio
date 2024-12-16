@@ -1,161 +1,187 @@
+@font-face {
+  font-family: "bride";
+  src: url("../fonts/Bride.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-    background-color: var(--couleur-body);
-    color: var(--couleur-texte);
-    margin: 0;
-    font-family: "Inter-SemiBold", sans-serif;
+  background-color: var(--couleur-body);
+  color: var(--couleur-texte);
+  margin: 0;
+  font-family: "Inter-SemiBold", sans-serif;
 }
 
 .container-parent {
-    display: flex;
-    height: auto;
-    padding: 100px 150px 50px 150px;
-    align-items: center;
-    gap: 40px;
-    flex-direction: column;
-    min-height: 80vh;
+  display: flex;
+  height: auto;
+  padding: 100px 150px 50px 150px;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  min-height: 80vh;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
 }
 
 .container-intro {
-    background-color: var(--couleur-container);
-    display: flex;
-    width: calc(100% - 60px);
-    height: fit-content;
-    padding: 30px;
-    border-radius: 50px;
-    border: solid 1px var(--couleur-border);
-    flex-direction: column;
-    gap: 30px;
+  background-color: var(--couleur-container);
+  display: flex;
+  width: calc(100% - 60px);
+  height: fit-content;
+  padding: 30px;
+  border-radius: 50px;
+  border: solid 1px var(--couleur-border);
+  flex-direction: column;
+  gap: 30px;
 }
 
 .container-details {
-    background-color: var(--couleur-container);
-    display: flex;
-    width: calc(100% - 60px);
-    height: fit-content;
-    padding: 30px;
-    border-radius: 50px;
-    border: solid 1px var(--couleur-border);
-    flex-direction: column;
-    gap: 30px;
+  background-color: var(--couleur-container);
+  display: flex;
+  width: calc(100% - 60px);
+  height: fit-content;
+  padding: 30px;
+  border-radius: 50px;
+  border: solid 1px var(--couleur-border);
+  flex-direction: column;
+  gap: 30px;
 }
 
 .container-simulation {
-    background-color: var(--couleur-container);
-    display: flex;
-    width: calc(100% - 60px);
-    height: fit-content;
-    padding: 30px;
-    border-radius: 50px;
-    border: solid 1px var(--couleur-border);
-    flex-direction: column;
-    gap: 30px;
+  background-color: var(--couleur-container);
+  display: flex;
+  width: calc(100% - 60px);
+  height: fit-content;
+  padding: 30px;
+  border-radius: 50px;
+  border: solid 1px var(--couleur-border);
+  flex-direction: column;
+  gap: 30px;
 }
 
 .title {
-    font-size: 42px;
-    color: var(--couleur-texte);
+  font-size: 42px;
+  color: var(--couleur-texte);
 }
 
 .introduction {
-    font-size: 20px;
-    color: var(--couleur-sous-texte);
-    line-height: 1.6;
+  font-size: 20px;
+  color: var(--couleur-sous-texte);
+  line-height: 1.6;
+}
+
+.bloc-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bloc-titre {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.travail {
+  font-family: "Montez", cursive;
+  font-size: 24px;
 }
 
 .details-text {
-    font-size: 18px;
-    color: var(--couleur-sous-texte);
-    line-height: 1.6;
+  font-size: 18px;
+  color: var(--couleur-sous-texte);
+  line-height: 1.6;
 }
 
 .simulation-container {
-    display: flex;
-    gap: 30px;
-    justify-content: space-between;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
 }
 
 .sources {
-    flex: 1;
+  flex: 1;
 }
 
 .game-container {
-    flex: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .source-link {
-    color: var(--couleur-texte);
-    text-decoration: none;
-    transition: color 0.3s ease;
+  color: var(--couleur-texte);
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .source-link:hover {
-    color: var(--couleur-sous-texte);
+  color: var(--couleur-sous-texte);
 }
 
 #gameCanvas {
-    background-color: var(--couleur-input);
-    border: 1px solid var(--couleur-border);
-    border-radius: 10px;
+  background-color: var(--couleur-input);
+  border: 1px solid var(--couleur-border);
+  border-radius: 10px;
 }
 
 /* Styles pour la navbar */
 .navbar {
-    display: flex;
-    justify-content: left;
-    width: auto;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  justify-content: left;
+  width: auto;
+  align-items: center;
+  gap: 10px;
 }
 
 .centre {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
-    background: none;
-    border: none;
-    font: inherit;
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  background: none;
+  border: none;
+  font: inherit;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
 }
 
 .texte {
-    font-size: var(--taille-texte);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    flex-wrap: nowrap;
-  }
+  font-size: var(--taille-texte);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
 
 @media (max-width: 1000px) {
-    .container-parent {
-        padding: 50px 50px 50px 50px;
-    }
+  .container-parent {
+    padding: 50px 50px 50px 50px;
+  }
 
-    .simulation-container {
-        flex-direction: column;
-    }
+  .simulation-container {
+    flex-direction: column;
+  }
 
-    .game-container {
-        width: 100%;
-    }
+  .game-container {
+    width: 100%;
+  }
 
-    #gameCanvas {
-        width: 100%;
-        height: auto;
-    }
+  #gameCanvas {
+    width: 100%;
+    height: auto;
+  }
 }
