@@ -10,3 +10,8 @@
 body {
   user-select: none;
 }
+@media (max-width: 600px) {
+  .container-parent {
+    padding: 20px;
+  }
+}

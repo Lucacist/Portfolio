@@ -205,6 +205,11 @@ a {
     width: 100%;
   }
 }
+@media (max-width: 600px) {
+  .container-parent {
+    padding: 20px;
+  }
+}
 @media (max-width: 500px) {
   #game-container {
     grid-template-columns: repeat(20, 10px);
