@@ -97,7 +97,7 @@ body {
 }
 
 .details-text {
-  font-size: 18px;
+  font-size: 20px;
   color: var(--couleur-sous-texte);
   line-height: 1.6;
 }
@@ -127,7 +127,7 @@ body {
   text-decoration: none;
   transition: color 0.3s ease;
   text-decoration: underline; /* Texte souligné */
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .source-link:hover {
