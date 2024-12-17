@@ -60,42 +60,53 @@
         <div class="container-details">
           <div class="title">Comment ça fonctionne ?</div>
           <div class="details-text">
-            Le jeu se déroule sur une grille bidimensionnelle infinie, où chaque
-            cellule peut être vivante ou morte. L'évolution est déterminée par
-            quatre règles simples :<br /><br />
-            1. Une cellule morte avec exactement 3 voisines vivantes devient
-            vivante<br />
-            2. Une cellule vivante avec 2 ou 3 voisines vivantes reste
-            vivante<br />
-            3. Une cellule vivante avec moins de 2 voisines vivantes meurt de
-            solitude<br />
-            4. Une cellule vivante avec plus de 3 voisines vivantes meurt de
-            surpopulation
+            <br />
+            1. Une cellule morte avec exactement trois voisines vivantes devient
+            vivante.<br />
+            2. Une cellule vivante avec deux ou trois voisines vivantes reste
+            vivante.<br />
+            3. Une cellule vivante avec moins de deux voisines vivantes meurt de
+            solitude.<br />
+            4. Une cellule vivante avec plus de trois voisines vivantes meurt de
+            surpopulation.<br /><br />
+            Le jeu se déroule sur une grille bidimensionnelle, et les cellules
+            sont influencées par leur voisinage immédiat (les 8 cellules
+            adjacentes, sauf en mode torique).<br /><br />
+            La simulation peut être exécutée en mode console ou graphique. Le
+            mode graphique permet également d'interagir avec la grille en
+            ajoutant ou supprimant des cellules par clic, et de contrôler le
+            temps entre les itérations avec les touches "<" et ">".<br /><br />
+            De plus, une fonctionnalité d'extension permet de créer une grille
+            torique où les cellules des bords sont adjacentes à celles situées à
+            l’opposé. Des cellules obstacles peuvent aussi être ajoutées, qui ne
+            changent pas d'état pendant l'exécution du jeu.
           </div>
         </div>
 
         <!-- Container Simulation -->
         <div class="container-simulation">
-          <div class="title">Simulation & Sources</div>
           <div class="simulation-container">
             <div class="sources">
+              <div class="title">Simulation & Sources</div>
+
               <div class="details-text">
                 Ce projet a été développé en utilisant :<br /><br />
-                • HTML5 Canvas pour le rendu<br />
-                • JavaScript pour la logique du jeu<br />
-                • CSS pour le style et la mise en page<br /><br />
-                <a href="https://github.com/votre-repo" class="source-link"
-                  >Voir le code source sur GitHub →</a
-                >
+                • C++ (POO) pour la logique<br />
+                • Github pour les versions<br /><br />
               </div>
+              <a
+                href="https://github.com/Lucacist/jeu-de-Conway-projet"
+                class="source-link"
+                >Voir le code source sur GitHub →</a
+              >
             </div>
-            <div class="game-container">
-              <!-- Ici sera inséré le canvas pour la simulation -->
-              <canvas id="gameCanvas" width="500" height="500"></canvas>
-            </div>
+          </div>
+          <div class="game-container">
+            <div id="game-container"></div>
           </div>
         </div>
       </div>
     </div>
   </body>
+  <script src="../scripts/jeu-de-la-vie.js"></script>
 </html>

@@ -61,8 +61,9 @@ body {
   padding: 30px;
   border-radius: 50px;
   border: solid 1px var(--couleur-border);
-  flex-direction: column;
+  flex-direction: row;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .title {
@@ -109,6 +110,9 @@ body {
 
 .sources {
   flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .game-container {
@@ -122,6 +126,8 @@ body {
   color: var(--couleur-texte);
   text-decoration: none;
   transition: color 0.3s ease;
+  text-decoration: underline; /* Texte souligné */
+  font-size: 18px;
 }
 
 .source-link:hover {
@@ -167,6 +173,25 @@ a {
   flex-wrap: nowrap;
 }
 
+#game-container {
+  display: grid;
+  grid-template-columns: repeat(20, 15px); /* Taille réduite : 30 colonnes */
+  grid-template-rows: repeat(20, 15px); /* Taille réduite : 20 lignes */
+  gap: 1px;
+  background-color: #444;
+  border: 2px solid #888;
+}
+
+.cell {
+  width: 15px;
+  height: 15px;
+  background-color: var(--couleur-container);
+}
+
+.cell.alive {
+  background-color: var(--couleur-texte);
+}
+
 @media (max-width: 1000px) {
   .container-parent {
     padding: 50px 50px 50px 50px;
@@ -179,9 +204,14 @@ a {
   .game-container {
     width: 100%;
   }
-
-  #gameCanvas {
-    width: 100%;
-    height: auto;
+}
+@media (max-width: 500px) {
+  #game-container {
+    grid-template-columns: repeat(20, 10px);
+    grid-template-rows: repeat(20, 10px);
+  }
+  .cell {
+    width: 10px;
+    height: 10px;
   }
 }
