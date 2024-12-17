@@ -134,13 +134,6 @@ body {
   color: var(--couleur-sous-texte);
 }
 
-#gameCanvas {
-  background-color: var(--couleur-input);
-  border: 1px solid var(--couleur-border);
-  border-radius: 10px;
-}
-
-/* Styles pour la navbar */
 .navbar {
   display: flex;
   justify-content: left;

@@ -59,15 +59,26 @@ a {
   border-radius: 50px;
   border: solid 1px var(--couleur-border);
   gap: 30px;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.grid-item:hover {
+  transform: scale(1.05);
 }
 .text {
   font-size: 20px;
+  width: 100%;
 }
 .img-grid {
-  height: auto;
+  height: 200px;
   width: 100%;
   border-radius: 20px;
-  aspect-ratio: 5 / 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-grid2 {
+  height: 150px;
 }
 .inverted {
   filter: invert(2);
@@ -81,26 +92,45 @@ a {
   justify-content: center;
   gap: 10px;
 }
+#game-container {
+  display: grid;
+  grid-template-columns: repeat(13, 10px);
+  grid-template-rows: repeat(13, 10px);
+  gap: 1px;
+  background-color: #44444400;
+  border: 2px solid #88888800;
+  width: 146px;
+}
+
+.cell {
+  width: 10px;
+  height: 10px;
+  background-color: var(--couleur-container);
+}
+
+.cell.alive {
+  background-color: var(--couleur-texte);
+}
 @media (max-width: 1150px) {
   .container-parent {
     padding: 10vh 100px;
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1300px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
   }
 }
-@media (max-width: 600px) {
-  .container-parent {
-    padding: 5vh 50px;
-  }
-}
-@media (max-width: 500px) {
+@media (max-width: 850px) {
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, auto);
+  }
+}
+@media (max-width: 600px) {
+  .container-parent {
+    padding: 5vh 50px;
   }
 }

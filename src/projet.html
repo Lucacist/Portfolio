@@ -28,45 +28,182 @@
       </div>
       <div class="grid-container">
         <div class="grid-item">
-          <img src="./img/projet/bdd.png" class="img-grid" />
+          <div class="img-grid">
+            <img src="./img/projet/bdd.png" class="img-grid2" />
+          </div>
+
           <div class="svg-language">
             <img class="svg-langue" src="img/competences/MySQL.svg" alt="" />
           </div>
           <div class="text">Projet Base de données</div>
         </div>
         <a href="./projets/Jeu-de-conway.html" class="grid-item">
-          <img src="./img/projet/conway.gif" class="img-grid inverted" />
+          <div class="img-grid">
+            <div id="game-container"></div>
+          </div>
           <div class="svg-language">
             <img class="svg-langue" src="img/competences/C++.svg" alt="" />
             <img class="svg-langue" src="img/competences/C.svg" alt="" />
           </div>
-          <div class="text">Projey Jeu de Conway</div>
+          <div class="text">Projet Jeu de la Vie</div>
         </a>
         <div class="grid-item">
-          <img src="./img/projet/New-life.png" class="img-grid" />
+          <img src="./img/projet/New-life.svg" class="img-grid" />
           <div class="svg-language">
             <img class="svg-langue" src="img/competences/React.svg" alt="" />
             <img class="svg-langue" src="img/competences/CSS.svg" alt="" />
           </div>
-          <div class="text">Projet citoyen</div>
+          <div class="text">Projet New-life</div>
         </div>
         <div class="grid-item">
-          <img src="./img/projet/signal.png" class="img-grid" />
+          <div class="img-grid">
+            <img src="./img/projet/signal.png" class="img-grid2" />
+          </div>
+
           <div class="svg-language">
             <img class="svg-langue" src="img/competences/python.svg" alt="" />
           </div>
           <div class="text">Projet Escape no Game</div>
         </div>
         <div class="grid-item">
-          <img src="./img/projet/coffre.png" class="img-grid" />
+          <div class="img-grid">
+            <img src="./img/projet/coffre.png" class="img-grid2" />
+          </div>
+
           <div class="svg-language">
             <img class="svg-langue" src="img/competences/C++.svg" alt="" />
             <img class="svg-langue" src="img/competences/Arduino.svg" alt="" />
           </div>
           <div class="text">Projet Strongbox 3000</div>
         </div>
-        <div class="grid-item"><div class="text">6</div></div>
+        <div class="grid-item">
+          <div class="img-grid">
+            <img src="./img/projet/formation-tel-tab.png" class="img-grid2" />
+          </div>
+          <div class="svg-language">
+            <img
+              class="svg-langue"
+              src="img/competences/javascript.svg"
+              alt=""
+            />
+            <img class="svg-langue" src="img/competences/HTML.svg" alt="" />
+            <img class="svg-langue" src="img/competences/CSS.svg" alt="" />
+          </div>
+          <div class="text">Projet site Formation</div>
+        </div>
       </div>
     </div>
   </body>
+  <script>
+    const rows = 13; // Nombre de lignes
+    const cols = 13; // Nombre de colonnes
+    const speed = 1000; // Vitesse en millisecondes
+
+    const container = document.getElementById("game-container");
+    let grid = createGrid(rows, cols);
+    let nextGrid = createGrid(rows, cols);
+
+    // Grille initiale (1 pour cellule vivante, 0 pour cellule morte)
+    const initialGrid = [
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      [0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0],
+      [0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0],
+      [0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      [0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0],
+      [0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0],
+      [0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0],
+      [0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0],
+      [0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    ];
+
+    function createGrid(rows, cols) {
+      return Array.from({ length: rows }, () => Array(cols).fill(0));
+    }
+
+    function createHtmlGrid() {
+      for (let i = 0; i < rows; i++) {
+        for (let j = 0; j < cols; j++) {
+          const cell = document.createElement("div");
+          cell.classList.add("cell");
+          container.appendChild(cell);
+        }
+      }
+    }
+
+    function updateHtmlGrid() {
+      const cells = document.querySelectorAll(".cell");
+      let index = 0;
+      for (let i = 0; i < rows; i++) {
+        for (let j = 0; j < cols; j++) {
+          cells[index].classList.toggle("alive", grid[i][j] === 1);
+          index++;
+        }
+      }
+    }
+
+    function initializeGrid() {
+      for (let i = 0; i < rows; i++) {
+        for (let j = 0; j < cols; j++) {
+          grid[i][j] = initialGrid[i][j] || 0; // Copier initialGrid dans grid
+        }
+      }
+    }
+
+    function getNeighborCount(grid, x, y) {
+      const directions = [
+        [-1, -1],
+        [-1, 0],
+        [-1, 1],
+        [0, -1],
+        [0, 1],
+        [1, -1],
+        [1, 0],
+        [1, 1],
+      ];
+      return directions.reduce((count, [dx, dy]) => {
+        const newX = x + dx;
+        const newY = y + dy;
+        if (newX >= 0 && newX < rows && newY >= 0 && newY < cols) {
+          count += grid[newX][newY];
+        }
+        return count;
+      }, 0);
+    }
+
+    function computeNextGeneration() {
+      for (let i = 0; i < rows; i++) {
+        for (let j = 0; j < cols; j++) {
+          const neighbors = getNeighborCount(grid, i, j);
+          if (grid[i][j] === 1) {
+            nextGrid[i][j] = neighbors === 2 || neighbors === 3 ? 1 : 0;
+          } else {
+            nextGrid[i][j] = neighbors === 3 ? 1 : 0;
+          }
+        }
+      }
+
+      // Copier nextGrid dans grid
+      for (let i = 0; i < rows; i++) {
+        for (let j = 0; j < cols; j++) {
+          grid[i][j] = nextGrid[i][j];
+        }
+      }
+    }
+
+    function gameLoop() {
+      computeNextGeneration();
+      updateHtmlGrid();
+      setTimeout(gameLoop, speed);
+    }
+
+    // Initialisation
+    createHtmlGrid();
+    initializeGrid(); // Charger la grille initiale
+    updateHtmlGrid();
+    gameLoop();
+  </script>
 </html>
