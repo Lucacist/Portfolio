@@ -10,6 +10,16 @@
 body {
   user-select: none;
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 30px;
+}
 @media (max-width: 600px) {
   .container-parent {
     padding: 20px;
