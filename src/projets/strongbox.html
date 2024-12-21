@@ -90,7 +90,7 @@
             </div>
             <div class="texte-fonction">Scan Digitale</div>
           </a>
-          <div class="bloc">
+          <a class="bloc" onclick="scanretinien()">
             <div class="img-fonction">
               <svg
                 width="100"
@@ -112,8 +112,8 @@
               </svg>
             </div>
             <div class="texte-fonction">Scan Rétinien</div>
-          </div>
-          <div class="bloc">
+          </a>
+          <a class="bloc" onclick="cardid()">
             <div class="img-fonction">
               <svg
                 width="128.5"
@@ -129,11 +129,11 @@
               </svg>
             </div>
             <div class="texte-fonction">Card ID</div>
-          </div>
+          </a>
         </div>
 
         <div class="container-fonction2">
-          <div class="bloc">
+          <a class="bloc" onclick="code()">
             <div class="img-fonction">
               <svg
                 width="100"
@@ -153,8 +153,8 @@
               </svg>
             </div>
             <div class="texte-fonction">Code Dynamique</div>
-          </div>
-          <div class="bloc">
+          </a>
+          <a class="bloc" onclick="authen()">
             <div class="img-fonction">
               <svg
                 width="130"
@@ -170,7 +170,7 @@
               </svg>
             </div>
             <div class="texte-fonction">Authentification Q&R</div>
-          </div>
+          </a>
         </div>
 
         <!-- Container Simulation -->
@@ -255,7 +255,8 @@
       </div>
     </div>
 
-    <a class="card_parent1">
+    <!-- Scan-digital -->
+    <div class="card_parent1">
       <div class="card-child">
         <div class="inform">
           <div class="inform-titre">Informations Supplémantaires</div>
@@ -291,11 +292,193 @@
           />
         </div>
       </div>
-    </a>
+    </div>
+
+    <!-- Scan-rétinien -->
+    <div class="card_parent2">
+      <div class="card-child">
+        <div class="inform">
+          <div class="inform-titre">Informations Supplémantaires</div>
+          <div onclick="scanretinien()" class="cross">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 20L4 4M20 4L4 20"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="donnee-column2">
+          <div class="texte-expli">
+            Le système de scan rétinien fonctionne de manière similaire au
+            système de scan digital. Il associe et valide les empreintes
+            rétiniennes en vérifiant leur correspondance avec celles de l'agent.
+            Pour confirmer ou rejeter une empreinte rétinienne dans le contexte
+            de notre projet, il suffit d'entrer "f" pour false (faux) ou "t"
+            pour true (vrai) dans le terminal du code Arduino.
+          </div>
+          <img class="scan-gif" src="../img/projet/strongbox/face-id.gif" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Card-id -->
+    <div class="card_parent3">
+      <div class="card-child">
+        <div class="inform">
+          <div class="inform-titre">Informations Supplémantaires</div>
+          <div onclick="cardid()" class="cross">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 20L4 4M20 4L4 20"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="donnee">
+          <img
+            class="tableau-lettre"
+            src="../img/projet/strongbox/tableau-lettre.png"
+          />
+          <div class="text-et-logo">
+            <div class="texte-expli">
+              Le système de carte d'identité compare les numéros d'agents à
+              leurs numéros binaires. Si les numéros ne correspondent pas, le
+              système se bloque. Dans le cas contraire, il passe à l'étape
+              d'authentification suivante.
+            </div>
+            <svg
+              class="logo-binaire"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10.57 1.14L13.85 4.44L14 4.8V14.5L13.5 15H2.5L2 14.5V1.5L2.5 1H10.22L10.57 1.14ZM3 2V14H13V5L10 2H3ZM4.46 6.052C4.46 7.339 4.918 7.982 5.834 7.982C6.291 7.982 6.641 7.809 6.884 7.462C7.13 7.114 7.252 6.615 7.252 5.963C7.252 4.654 6.805 4 5.91 4C5.439 4 5.079 4.175 4.83 4.526C4.583 4.876 4.46 5.384 4.46 6.052ZM5.322 6.03C5.322 5.108 5.505 4.647 5.872 4.647C6.216 4.647 6.388 5.095 6.388 5.99C6.388 6.885 6.212 7.333 5.861 7.333C5.501 7.333 5.322 6.899 5.322 6.03ZM8.509 7.916H10.944V7.244H10.152V4L8.487 4.336V5.023L9.307 4.846V7.244H8.509V7.916ZM7.172 12.916H4.736V12.244H5.534V9.846L4.714 10.023V9.336L6.38 9V12.244H7.172V12.915V12.916ZM8.207 10.985C8.207 12.272 8.665 12.915 9.582 12.915C10.039 12.915 10.389 12.742 10.632 12.395C10.877 12.047 11 11.548 11 10.896C11 9.587 10.552 8.933 9.657 8.933C9.187 8.933 8.827 9.108 8.577 9.459C8.331 9.809 8.207 10.317 8.207 10.985ZM9.069 10.963C9.069 10.041 9.253 9.58 9.619 9.58C9.963 9.58 10.135 10.028 10.135 10.923C10.135 11.818 9.96 12.266 9.609 12.266C9.249 12.266 9.069 11.832 9.069 10.963Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Code -->
+    <div class="card_parent4">
+      <div class="card-child">
+        <div class="inform">
+          <div class="inform-titre">Informations Supplémantaires</div>
+          <div onclick="code()" class="cross">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 20L4 4M20 4L4 20"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="donnee-column">
+          <img
+            class="code-dynamique"
+            src="../img/projet/strongbox/code-dynamique.png"
+          />
+          <div class="text-et-logo">
+            <div class="texte-expli">
+              Cette phase d'authentification s'effectue en saisissant notre
+              lettre d'agent. Le coffre nous génère ensuite un code, que nous
+              devons entrer sur une tablette équipée d'une clé d'agent. Cela
+              nous permet d'obtenir une clé de déchiffrement, nécessaire pour
+              déverrouiller le coffre ou progresser vers la prochaine étape
+              d'authentification.
+            </div>
+            <div class="logi-parent">
+              <a
+                href="https://replit.com/@jfdollinger/RSA-algorithm-decrypt#main.c"
+                class="lien-logi"
+                >Logiciel de Déchiffrage</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- A2F -->
+    <div class="card_parent5">
+      <div class="card-child">
+        <div class="inform">
+          <div class="inform-titre">Informations Supplémantaires</div>
+          <div onclick="authen()" class="cross">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 20L4 4M20 4L4 20"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="donnee-column2">
+          <div class="texte-expli">
+            Le système d'authentification Questions-Réponses (Q&R) est une
+            mesure de sécurité très simple. Le coffre pose des questions, et il
+            suffit de répondre correctement pour déverrouiller le coffre ou
+            avancer vers la prochaine étape d'authentification. En cas de
+            réponses incorrectes, le coffre se bloque.
+          </div>
+          <svg
+            width="250"
+            height="250"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 4C10.6739 4 9.40215 4.52678 8.46447 5.46447C7.52678 6.40215 7 7.67392 7 9C7 9.26522 7.10536 9.51957 7.29289 9.70711C7.48043 9.89464 7.73478 10 8 10C8.26522 10 8.51957 9.89464 8.70711 9.70711C8.89464 9.51957 9 9.26522 9 9C9 7.342 10.342 6 12 6C13.658 6 15 7.342 15 9C15 9.816 14.801 10.294 14.562 10.629C14.3 10.994 13.937 11.267 13.434 11.614L13.318 11.692C12.871 11.998 12.295 12.391 11.849 12.939C11.322 13.587 11 14.406 11 15.5V16C11 16.2652 11.1054 16.5196 11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071C12.8946 16.5196 13 16.2652 13 16V15.5C13 14.844 13.178 14.476 13.4 14.201C13.657 13.887 14.003 13.649 14.514 13.298L14.567 13.261C15.063 12.921 15.7 12.475 16.187 11.793C16.7 11.081 17 10.183 17 9C17 7.67392 16.4732 6.40215 15.5355 5.46447C14.5979 4.52678 13.3261 4 12 4ZM12 21.25C12.3315 21.25 12.6495 21.1183 12.8839 20.8839C13.1183 20.6495 13.25 20.3315 13.25 20C13.25 19.6685 13.1183 19.3505 12.8839 19.1161C12.6495 18.8817 12.3315 18.75 12 18.75C11.6685 18.75 11.3505 18.8817 11.1161 19.1161C10.8817 19.3505 10.75 19.6685 10.75 20C10.75 20.3315 10.8817 20.6495 11.1161 20.8839C11.3505 21.1183 11.6685 21.25 12 21.25Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
   </body>
   <script src="../scripts/scand.js"></script>
-  <script src="../script/scanr.js"></script>
-  <script src="../script/cardid.js"></script>
-  <script src="../script/code.js"></script>
-  <script src="../script/authen.js"></script>
+  <script src="../scripts/scanr.js"></script>
+  <script src="../scripts/cardid.js"></script>
+  <script src="../scripts/code.js"></script>
+  <script src="../scripts/authen.js"></script>
 </html>
