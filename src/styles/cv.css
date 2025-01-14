@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "bride";
+  src: url("../fonts/Bride.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--couleur-body);
+  color: var(--couleur-texte);
+  margin: 0;
+  font-family: "Inter-SemiBold", sans-serif;
+}
+.container-parent {
+  display: flex;
+  height: auto;
+  padding: 100px 150px 50px 150px;
+  align-items: center;
+  gap: 40px;
+  flex-direction: column;
+  min-height: 80vh;
+}
+.container-principal {
+  gap: 1.5vw;
+  width: 100%;
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container {
+  background-color: var(--couleur-container);
+  display: flex;
+  height: auto;
+  width: calc(100% - 60px);
+  padding: 30px;
+  border-radius: 50px;
+  justify-content: space-between;
+  border: solid 1px var(--couleur-border);
+}
+
+.bloc-id {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 175px;
+}
+.texte-id {
+  text-align: center;
+}
+.svg-id {
+  height: 42px;
+}
+.container2 {
+  background-color: var(--couleur-container);
+  display: flex;
+  grid-column: span 2;
+  height: auto;
+  width: auto;
+  padding: 30px;
+  border-radius: 50px;
+  border: solid 1px var(--couleur-border);
+  flex-direction: column;
+  gap: 20px;
+}
+.pp {
+  grid-column: span 1;
+  display: flex;
+  width: 100%;
+  background-color: var(--couleur-container);
+  border-radius: 50px;
+  border: solid 1px var(--couleur-border);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.img-pp {
+  width: 25vw;
+}
+.nom {
+  font-size: 42px;
+  font-family: "bride";
+}
+.role {
+  color: var(--couleur-sous-texte);
+  font-size: 14px;
+}
+.CESI {
+  color: rgba(var(--couleur-cesi), 0.85);
+}
+.presentation {
+  font-size: 20px;
+}
+.moi {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 2px;
+}

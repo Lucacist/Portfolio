@@ -6,6 +6,7 @@
   --couleur-texte: #fff;
   --couleur-sous-texte: #ffffff95;
   --taille-texte: 20px;
+  --couleur-cesi: 255, 251, 15;
 }
 body {
   user-select: none;
