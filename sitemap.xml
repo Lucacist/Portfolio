@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <!-- Pages principales -->
+   <url>
+      <loc>https://lucacist.github.io/Portfolio/src/Home.html</loc>
+      <lastmod>2025-01-16</lastmod>
+      <priority>1.0</priority>
+   </url>
+   <url>
+      <loc>https://lucacist.github.io/Portfolio/src/Competences.html</loc>
+      <lastmod>2025-01-16</lastmod>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://lucacist.github.io/Portfolio/src/Contact.html</loc>
+      <lastmod>2025-01-16</lastmod>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://lucacist.github.io/Portfolio/src/cv.html</loc>
+      <lastmod>2025-01-16</lastmod>
+      <priority>0.7</priority>
+   </url>
+   <url>
+      <loc>https://lucacist.github.io/Portfolio/src/projet.html</loc>
+      <lastmod>2025-01-16</lastmod>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://lucacist.github.io/Portfolio/src/test.html</loc>
+      <lastmod>2025-01-16</lastmod>
+      <priority>0.5</priority>
+   </url>
+
+   <!-- Projets spécifiques -->
+   <url>
+      <loc>https://lucacist.github.io/Portfolio/src/projets/Escape-no-game.html</loc>
+      <lastmod>2025-01-16</lastmod>
+      <priority>0.7</priority>
+   </url>
+   <url>
+      <loc>https://lucacist.github.io/Portfolio/src/projets/Jeu-de-conway.html</loc>
+      <lastmod>2025-01-16</lastmod>
+      <priority>0.7</priority>
+   </url>
+   <url>
+      <loc>https://lucacist.github.io/Portfolio/src/projets/bdd.html</loc>
+      <lastmod>2025-01-16</lastmod>
+      <priority>0.7</priority>
+   </url>
+   <url>
+      <loc>https://lucacist.github.io/Portfolio/src/projets/strongbox.html</loc>
+      <lastmod>2025-01-16</lastmod>
+      <priority>0.7</priority>
+   </url>
+</urlset>
