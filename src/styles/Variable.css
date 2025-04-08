@@ -9,7 +9,7 @@
   --couleur-cesi: 255, 251, 15;
 }
 body {
-  user-select: none;
+  user-select: auto;
 }
 ::-webkit-scrollbar {
   width: 5px;

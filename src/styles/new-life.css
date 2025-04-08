@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "bride";
+  src: url("../fonts/Bride.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--couleur-body);
+  color: var(--couleur-texte);
+  margin: 0;
+  font-family: "Inter-SemiBold", sans-serif;
+}
+
+.container-parent {
+  display: flex;
+  height: auto;
+  padding: 100px 150px 50px 150px;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+.container-details {
+  background-color: var(--couleur-container);
+  display: flex;
+  width: calc(100% - 60px);
+  height: fit-content;
+  padding: 30px;
+  border-radius: 50px;
+  border: solid 1px var(--couleur-border);
+  flex-direction: column;
+  gap: 30px;
+}
+.title {
+  font-size: 42px;
+  color: var(--couleur-texte);
+}
+
+.sous-titre {
+  font-size: 20px;
+  line-height: 1.6;
+}
+.introduction {
+  font-size: 20px;
+  color: var(--couleur-sous-texte);
+  line-height: 1.6;
+}
+.travail {
+  font-family: "Montez", cursive;
+  font-size: 24px;
+}
+.bloc-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bloc-titre {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.navbar {
+  display: flex;
+  justify-content: left;
+  width: auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.centre {
+  display: flex;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  background: none;
+  border: none;
+  font: inherit;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.texte {
+  font-size: var(--taille-texte);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
